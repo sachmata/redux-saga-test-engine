@@ -182,7 +182,7 @@ test('sagaTestEngine throws under bad conditions', t => {
   )
 
   // Bad mapping for saga that yields object with anonymous function
-  var anonymousFunction = function() { return 'something'; }
+  var anonymousFunction = function() { return 'something' }
   // Skip the anonymous function test if this anonymous functon is named (done in newer node versions)
   if (!anonymousFunction.name) {
     const f3 = function*() {
